@@ -18,14 +18,12 @@ Telegram-бот на базе нейросети **Qwen 2.5**. Главная ф
    ```
    git clone https://github.com
    cd Telegram-bot-with-ai
-   
    ```
 
 2. Установите зависимости:
-```   
-  pip install -r requirements.txt
-
-```
+   ```   
+   pip install -r requirements.txt
+   ```
 
 3. Настройка:
   В папке data два файла:
