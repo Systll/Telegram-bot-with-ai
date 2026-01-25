@@ -1,6 +1,41 @@
-# Telegram-bot-with-ai
-This is a Telegram bot integrated with the Qwen 2.5 AI. It features a shared memory across all users, making it perfect for having fun with a group of friends. To use the bot, simply type /ask followed by your message.
+# Telegram-bot-with-AI
 
-python 3.11.0
-pip install requerements.txt
+Telegram-бот на базе нейросети **Qwen 2.5**. Главная фишка — **общая память** для всех участников чата. Бот помнит контекст беседы и понимает, кто из друзей к нему обращается.
+
+## Особенности
+- Использует модель `Qwen/Qwen2.5-7B-Instruct` через Hugging Face API.
+- Сохраняет историю сообщений в JSON-файл (память не стирается после перезагрузки).
+- Разделяет сообщения по именам пользователей.
+
+## Требования
+- Python 3.11+
+- Токен Telegram бота (от @BotFather)
+- API-ключ Hugging Face (HF_TOKEN)
+
+## Установка
+
+1. Склонируйте репозиторий:
+   ```
+   git clone https://github.com
+   cd Telegram-bot-with-ai
+   
+   ```
+
+2. Установите зависимости:
+```   
+  pip install -r requirements.txt
+
+```
+
+3.
+  В папке data два файла:
+  bot_token.txt — вставьте сюда токен вашего бота.
+  HF_TOKEN.txt — вставьте сюда ваш API-ключ Hugging Face.
+
+### Запуск
+```
+python main.py
+```
+
+Просто добавьте бота в группу с друзьями и он будет разговаривать с вами. У бота общая память для всех пользователей!
 
