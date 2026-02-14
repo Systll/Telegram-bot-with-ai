@@ -2,6 +2,7 @@ import json
 import requests
 import os
 
+print(requests.__version__ + ' requests')
 
 history_file = 'history.json'
 
@@ -34,8 +35,8 @@ def query(user_name,message):
     
     payload = {
         'messages': chat_history,
-        'model': 'Qwen/Qwen2.5-7B-Instruct:together',
-        'max_tokens': 500
+        'model': 'deepseek-ai/DeepSeek-V3',
+        'max_tokens': 1000
     }
     
     try:
